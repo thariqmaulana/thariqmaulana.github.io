@@ -117,6 +117,12 @@ main {
   /* max-width: 1000px; */
 }
 
+.main__article-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .main__section {
   max-width: 400px;
   display: flex;
@@ -127,6 +133,19 @@ main {
   /* position: absolute;
   top: -200px;
   left: 15%; */
+}
+
+.main__section-contact {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* align-items: center; */
+  gap: 0.5rem;
+  border: 1px solid #264653;
+  /* border-radius: 4px; */
+  text-align: center;
+  padding: 20px;
 }
 
 .main__title {
@@ -187,4 +206,38 @@ main {
 .tech-icon-tailwind:hover {
   filter: drop-shadow(0 0 30px #06b6d4);
   transform: scale(1.2);
+}
+
+.main__section-title-contact {
+  color: rgb(79, 170, 176);
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+.main__section-description-contact {
+  margin: 1rem 0;
+  color: #a3a3a3;
+}
+
+.main__anchor-contact {
+  margin-top: auto;
+}
+
+.main__anchor-contact a {
+  color: #c1e4e3;
+  background-color: #264653;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  padding: 0.8rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.main__anchor-contact a:hover, .main__anchor-contact a:focus {
+  color: white;
+  background-color: #12343b;
+}
+
+.main__anchor-contact a:active {
+  transform: scale(0.98);
 }
