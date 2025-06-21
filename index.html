@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QNVFKZNGFG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-QNVFKZNGFG');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thariq Maulana - About</title>
@@ -14,7 +28,7 @@
       function toggleMenu() {
         document.getElementById('header__nav-mobile').classList.toggle('show');
       }
-      </script>
+    </script>
   </head>
   <body>
     <header>
@@ -37,6 +51,17 @@
           >Contact<span class="header__emoji-mail">📪</span></a
         >
       </nav>
+
+      <section class="header__section-mobile">
+        <nav id="header__nav-mobile" class="header__nav-mobile">
+          <a href="index.html"
+            >About<span class="header__emoji-head">🦰</span></a
+          >
+          <a href="contact.html"
+            >Contact<span class="header__emoji-mail">📪</span></a
+          >
+        </nav>
+      </section>
     </header>
 
     <main>
