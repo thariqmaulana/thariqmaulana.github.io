@@ -10,11 +10,19 @@
       crossorigin="anonymous"
     ></script>
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <script>
+      function toggleMenu() {
+        document.getElementById('header__nav-mobile').classList.toggle('show');
+      }
+      </script>
   </head>
   <body>
     <header>
       <section class="header-title-line">
         <p>Tech Stack</p>
+        <button class="header__button" onclick="toggleMenu()">
+          <i class="fa-solid fa-compass"></i>
+        </button>
         <nav>
           <a href="index.html"
             >About<span class="header__emoji-head">🦰</span></a
@@ -24,6 +32,13 @@
           >
         </nav>
       </section>
+
+      <nav id="header__nav-mobile" class="header__nav-mobile">
+        <a href="tech.html">Tech<span class="header__emoji-gear">⚙️</span></a>
+        <a href="contact.html"
+          >Contact<span class="header__emoji-mail">📪</span></a
+        >
+      </nav>
     </header>
 
     <main>

@@ -9,17 +9,34 @@
       src="https://kit.fontawesome.com/89d8def7c5.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <script>
+      function toggleMenu() {
+        document.getElementById('header__nav-mobile').classList.toggle('show');
+      }
+      </script>
   </head>
   <body>
     <header>
       <section class="header-title-line">
         <p>Thariq Maulana</p>
-        <nav>
+        <button class="header__button" onclick="toggleMenu()">
+          <i class="fa-solid fa-compass"></i>
+        </button>
+        <nav id="header__nav" class="header__nav">
           <a href="tech.html">Tech<span class="header__emoji-gear">⚙️</span></a>
-          <a href="contact.html">Contact<span class="header__emoji-mail">📪</span></a>
+          <a href="contact.html"
+            >Contact<span class="header__emoji-mail">📪</span></a
+          >
         </nav>
       </section>
+
+      <nav id="header__nav-mobile" class="header__nav-mobile">
+        <a href="tech.html">Tech<span class="header__emoji-gear">⚙️</span></a>
+        <a href="contact.html"
+          >Contact<span class="header__emoji-mail">📪</span></a
+        >
+      </nav>
     </header>
 
     <main>
@@ -37,7 +54,6 @@
     </main>
   </body>
 </html>
-
 
 <!-- <section class="main__section">
   buat class baru lalu align center

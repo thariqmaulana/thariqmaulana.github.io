@@ -40,8 +40,16 @@ header {
   margin-left: 1rem;
 }
 
+.header__button {
+  display: none;
+}
+
 nav {
   margin-right: 1rem;
+}
+
+.header__nav-mobile {
+  display: none;
 }
 
 nav a {
@@ -50,7 +58,8 @@ nav a {
   font-weight: 600;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   color: #fff;
 }
 
@@ -68,6 +77,7 @@ nav a:hover, nav a:focus {
   33% {
     transform: translateY(100px);
   }
+
   66% {
     transform: rotate(-45deg);
   }
@@ -77,6 +87,7 @@ nav a:hover, nav a:focus {
   33% {
     transform: rotate(45deg);
   }
+
   66% {
     transform: rotate(-45deg);
   }
@@ -233,11 +244,87 @@ main {
   transition: all 0.1s ease-in-out;
 }
 
-.main__anchor-contact a:hover, .main__anchor-contact a:focus {
+.main__anchor-contact a:hover,
+.main__anchor-contact a:focus {
   color: white;
   background-color: #12343b;
 }
 
 .main__anchor-contact a:active {
   transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+  .header-title-line p {
+    font-size: 1.3rem;
+  }
+
+  .main__title {
+    color: rgb(79, 170, 176);
+    font-size: 1rem;
+  }
+  .header__button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    margin-right: 0;
+  }
+
+  .header__nav-mobile.show {
+    display: block;
+  }
+
+  .header__nav-mobile.show a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #a3a3a3;
+    text-decoration: none;
+    font-weight: 600;
+    border-top: 1px solid black;
+  }
+
+  .header__nav-mobile.show a:hover,
+  .header__nav-mobile.show a:focus {
+    color: #fff;
+    background-color: #153673;
+  }
+
+  main {
+    padding-left: 0;
+  }
+
+  .main__article {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: spa; */
+    margin-left: 20px;
+  }
+
+  .main__name {
+    color: #c1e4e3;
+    font-size: 1.8rem;
+  }
+  
+  .main__description {
+    color: #848787;
+    font-size: 1.2rem;
+  }
+
+  .main__tech-stack {
+    font-size: 1.5rem;
+  }
+
+  .tech-icon {
+    width: 50px;
+    height: 40px;
+  }
 }
